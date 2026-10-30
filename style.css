@@ -28,6 +28,20 @@ footer {
   color: #fbfafa;
 }
 
+nav {
+display: flex;
+align-items: center;
+padding: 1rem;
+flex-wrap: wrap;
+}
+
+nav ul {
+  display: none;
+  list-style: none;
+  width: 100%;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
   #menu-btn {
     display: none;
@@ -61,5 +75,9 @@ footer {
 
   main {
     padding: 2rem;
+  }
+
+  #menu-btn {
+
   }
 }
