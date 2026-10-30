@@ -1,6 +1,8 @@
 const stylePicker = document.getElementById('style-picker');
 stylePicker.addEventListener("change", function () {
     const value = this.value
+// tar bort färger
+  document.body.classList.remove('theme-blue', 'theme-red', 'theme-green');
     if (value === 'blue') {
     document.body.classList.add('theme-blue');
   } else if (value === 'red') {
@@ -8,8 +10,6 @@ stylePicker.addEventListener("change", function () {
   } else if (value === 'green') {
     document.body.classList.add('theme-green');
   }
-// tar bort färger
-  document.body.classList.remove('theme-blue', 'theme-red', 'theme-green');
   });
 
 const menuBtn = document.getElementById('menu-btn');
